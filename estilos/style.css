@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(../fontes/idroid.otf) format(opentype);
+}
+/*PALETA DE CORES
+--cor01: #6971C8
+--cor02: #6D719D
+--cor03: #5764F2 
+--cor04: #636473
+--cor05:#1F2133
+*/
+:root{
+    --cor01: #6971C8;
+    --cor02: #6D719D;
+    --cor03: #5764F2;
+    --cor04: #636473;
+    --cor05:#1F2133;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--cor03);
+}
+h2{
+    background-image: linear-gradient(to right, var(--cor01), transparent);
+    font-family: 'idroid', cursive ;
+}
+main a{
+    text-decoration: none;
+    background-color: var(--cor0);
+    padding: 0 5px;
+    color: var(--cor03);
+}
+main a::after{
+    content: '\00a0\1F517';
+}
+strong{
+    color: var(--cor03);
+}
+main p{
+    text-indent: 30px;
+    text-align: justify;
+    margin: 20px;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor01), var(--cor05));
+    height: 150px;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+header > p{
+    max-width: 550px;
+    margin: 20px auto;
+    font-size: 1.2em;
+}
+nav{
+    background-color: var(--cor05);
+    padding: 10px;
+}
+nav a{
+    color: white;
+    text-decoration: none ;
+    padding: 10px;
+    border-radius: 10px;
+}
+nav a:hover{
+    background-color: var(--cor02);
+    transition-duration: 1s;
+}
+main{
+    background-color: white;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+}
+img{
+    display: block;
+    max-width: 800px;
+    margin: auto;
+}
+.videos{
+    background-color: var(--cor05);
+    margin: 0 -20px 30px -20px;
+    padding: 20px 0 50% 0;
+    position: relative;
+}
+.videos > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+aside{
+    background-color: var(--cor02);
+    border-radius: 10px;
+    padding: 10px;
+}
+h3{
+    background-color: var(--cor05);
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+aside > ul{
+    columns: 2;
+    list-style-position: inside;
+    list-style-type: '\2714';
+}
+footer{
+    background-color: var(--cor05);
+    color: white;
+    text-align: center;
+}
